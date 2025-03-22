@@ -10,8 +10,21 @@ collections:
     label: "Klinik Rehberler"
     folder: "content/guides"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.kategori}}-{{slug}}"
     fields:
+      - label: "Kategori"
+        name: "kategori"
+        widget: "select"
+        options:
+          - Kardiyak
+          - Nörolojik
+          - Solunum
+          - Enfeksiyon
+          - Travma
+          - Toksikoloji
+          - Gastrointestinal
+          - Endokrin / Metabolik
+          - Pediatri
       - {label: "Başlık", name: "title", widget: "string"}
       - {label: "Tarih", name: "date", widget: "datetime"}
       - {label: "İçerik", name: "body", widget: "markdown"}
