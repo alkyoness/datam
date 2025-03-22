@@ -2,9 +2,7 @@ backend:
   name: github
   repo: alkyoness/datam
   branch: main
-  base_url: https://guidelines.napiyimacil.com
-  auth_endpoint: /api/auth
-  
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
@@ -17,4 +15,4 @@ collections:
     fields:
       - {label: "Başlık", name: "title", widget: "string"}
       - {label: "Tarih", name: "date", widget: "datetime"}
-      - {label: "İçerik", name: "body", widget: "markdown"}  
+      - {label: "İçerik", name: "body", widget: "markdown"}
