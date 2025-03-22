@@ -1,7 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: alkyoness/datam
   branch: main
-
+  base_url: https://guidelines.napiyimacil.com
+  auth_endpoint: /api/auth
+  
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
