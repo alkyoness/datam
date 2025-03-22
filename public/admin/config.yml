@@ -1,8 +1,7 @@
 backend:
-  name: github
-  repo: alkyoness/datam
+  name: git-gateway
   branch: main
-
+  
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
