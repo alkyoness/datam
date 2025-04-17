@@ -19,8 +19,7 @@ function App() {
 
   useEffect(() => {
     const loadGuides = async () => {
-      const files = import.meta.glob('../../content/guides/*.md', { as: 'raw' });
-
+const files = import.meta.glob('../content/guides/*.md', { as: 'raw' });
       const entries = await Promise.all(
         Object.entries(files).map(async ([path, loader]) => {
           const raw = await loader();
